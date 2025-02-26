@@ -1,13 +1,10 @@
-// Step 1: Personalized Greeting
 let userName = prompt("Welcome to EatNow Cafe! Please enter your first name:");
 if (!userName) {
     userName = "Guest";
 }
 
-// Step 2: Welcome Message
 alert(`Hello, ${userName}! Welcome to EatNow Cafe.`);
 
-// Step 3: Display Menu Items
 let menu = [
     "Grilled Chicken",
     "Pasta Primavera",
@@ -21,7 +18,7 @@ menu.forEach((item, index) => {
     console.log(`${index + 1}. ${item}`);
 });
 
-// Step 4: Adding a New Dish
+
 let newDish = prompt("Would you like to suggest a new dish for our menu?");
 if (newDish && newDish.trim() !== "") {
     menu.push(newDish.trim());
